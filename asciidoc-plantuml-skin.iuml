@@ -1,0 +1,313 @@
+'Constant Definition
+!define FONTSERIF Helvetica
+!define FONTSANS Helvetica
+!define FONTMONO Helvetica
+
+'General
+skinparam shadowing false
+skinparam handwritten false
+skinparam backgroundColor transparent
+skinparam componentStyle uml2
+skinparam dpi 150
+
+'Default'
+skinparam default{
+  'Font Style
+  FontColor Black
+  FontSize 8
+  FontStyle normal
+
+  BackgroundColor #BCC8D9
+  BorderColor #6C8EBF
+  
+  'Other Style
+  TextAlignment left
+}
+skinparam padding 2
+
+'Header
+skinparam header {
+  FontColor Black
+  FontName FONTSANS
+  FontStyle plain
+}
+
+'Footer
+skinparam footer {
+  FontColor Black
+  FontName FONTSANS
+  FontStyle plain
+}
+
+'Title (inherits from Default)
+skinparam title {
+  'Font Style (inherits from Default)
+  FontSize 12
+
+  'Border Color
+  BackgroundColor transparent
+  BorderColor White
+  BorderRoundCorner 0
+  BorderThickness 0
+}
+
+'Arrow
+skinparam Arrow {
+  'Font Style (inherits from Default)
+  'FontName FONTSERIF
+  FontSize 5
+
+  'Color
+  Color #999
+  LollipopColor #999
+  Thickness 2
+  MessageAlignment center
+}
+
+'Note
+skinparam note {
+  'Font Style
+  FontColor #666
+  'FontName Helvetica
+  FontSize 7
+  FontStyle plain
+
+  'Color
+  BackgroundColor #FDFDFD
+  BorderColor #AAA
+  BorderThickness 0.5
+}
+
+'Node
+skinparam node {
+  'Font Style (inherits from Default)
+  FontSize 12
+  StereotypeFontColor Black
+  StereotypeFontName FONTMONO
+  StereotypeFontSize 10
+  StereotypeFontStyle plain
+
+  'Border Color
+  BackgroundColor White
+  BorderColor Black
+}
+
+'Rectangle
+skinparam rectangle {
+  'Font Style (inherits from Default)
+  FontSize 12
+  StereotypeFontColor Black
+  StereotypeFontName FONTMONO
+  StereotypeFontSize 10
+  StereotypeFontStyle plain
+
+  'Border Color
+  BackgroundColor White
+  BorderColor Black
+  BorderThickness 1
+}
+
+'Folder
+skinparam folder {
+  'Font Style (inherits from Default)
+  StereotypeFontColor Black
+  StereotypeFontName FONTMONO
+  StereotypeFontSize 10
+  StereotypeFontStyle plain
+
+  'Border Color
+  BackgroundColor White
+  BorderColor Black
+}
+
+'Frame
+skinparam frame {
+  'Font Style (inherits from Default)
+  StereotypeFontColor Black
+  StereotypeFontName FONTMONO
+  StereotypeFontSize 10
+  StereotypeFontStyle plain
+
+  'Border Color
+  BackgroundColor White
+  BorderColor Black
+}
+
+'Cloud
+skinparam cloud {
+  'Font Style (inherits from Default)
+  FontSize 12
+  StereotypeFontColor Black
+  StereotypeFontName FONTMONO
+  StereotypeFontSize 10
+  StereotypeFontStyle plain
+
+  'Border Color
+  BackgroundColor White
+  BorderColor Black
+}
+
+'Database
+skinparam database {
+  'Font Style (inherits from Default)
+  FontSize 12
+  StereotypeFontColor Black
+  StereotypeFontName FONTMONO
+  StereotypeFontSize 10
+  StereotypeFontStyle plain
+
+  'Border Color
+  BackgroundColor White
+  BorderColor Black
+}
+
+'Package (default style)
+skinparam package {
+  'Style
+  Style folder
+  TitleAlignment center
+
+  'Font Style (inherits from Default)
+  StereotypeFontColor Black
+  StereotypeFontName FONTMONO
+  StereotypeFontSize 10
+  StereotypeFontStyle plain
+
+  'Border Color
+  BackgroundColor White
+  BorderColor Black
+  BorderThickness 1
+}
+
+'Activity
+skinparam activity {
+  BackgroundColor #EDF3FC
+  BorderColor #6C8EBF
+  DiamondBackgroundColor #FFE6CC
+  DiamondBorderColor #D79B00
+  EndColor #82B366
+  StartColor #9673A6
+}
+
+'Actor
+skinparam actor {
+  'Font Style (inherits from Default)
+  FontSize 9
+
+  'Border Color
+  BackgroundColor WhiteSmoke
+  BorderColor Black
+}
+
+'Boundary
+skinparam boundary {
+  'Font Style (inherits from Default)
+  FontSize 12
+
+  'Border Color
+  BackgroundColor WhiteSmoke
+  BorderColor Black
+}
+
+'Control
+skinparam control {
+  'Font Style (inherits from Default)
+  FontSize 12
+
+  'Border Color
+  BackgroundColor WhiteSmoke
+  BorderColor Black
+}
+
+'Entity
+skinparam entity {
+  'Font Style (inherits from Default)
+  FontSize 12
+
+  'Border Color
+  BackgroundColor WhiteSmoke
+  BorderColor Black
+}
+
+'Collections
+skinparam collections {
+  'Font Style (inherits from Default)
+  FontSize 12
+
+  'Border Color
+  BackgroundColor WhiteSmoke
+  BorderColor Black
+}
+
+'Participant
+skinparam participant {
+  'Font Style (inherits from Default)
+  FontSize 9
+
+  'Border Color and Padding
+  BackgroundColor WhiteSmoke
+  BorderColor Black
+  Padding 5
+}
+
+'Sequence Diagrams
+hide footbox
+skinparam BoxPadding 5
+'skinparam MaxMessageSize 100
+skinparam sequence {
+  'Actor, Boundary, Control, Entity, and Collections
+  ActorBorderThickness 0.5
+
+  'Arrow
+  ArrowThickness 0.5
+  ArrowFontSize 8
+
+  'Box (inherits from Default)
+  BoxBackgroundColor #FCFDFF
+  BoxBorderColor #9AB3D6
+
+  'Delay (inherits from Default)
+
+  'Divider (inherits from Default)
+  DividerBackgroundColor transparent
+  DividerBorderColor Gray
+  DividerBorderThickness 1
+
+  'Group (inherits from Default)
+  GroupFontName FONTSERIF
+  GroupHeaderFontName FONTSANS
+  GroupBackgroundColor WhiteSmoke
+  GroupBodyBackgroundColor White
+  GroupBorderColor Black
+  GroupBorderThickness 1
+
+  'Life line
+  LifeLineBackgroundColor #BCC8D9
+  LifeLineBorderColor #6C8EBF
+  LifeLineBorderThickness 0.5
+
+  'Message
+  MessageAlignment center
+  MessageTextAlignment left
+
+  'Newpage
+  NewpageSeparatorColor Gray
+
+  'Participant
+  Participant plain
+  ParticipantBorderThickness 0.5
+  ParticipantBackgroundColor #BCC8D9
+
+  'Reference (inherits from Default)
+  ReferenceBackgroundColor White
+  ReferenceHeaderBackgroundColor WhiteSmoke
+  ReferenceBorderColor Black
+  ReferenceBorderThickness 1
+  ReferenceAlignment center
+
+  'Stereotype (inherits to Actor, Boundary, Control, Entity, Collections, Database, and Participant)
+  StereotypeFontColor Black
+  StereotypeFontName Arial
+  StereotypeFontSize 10
+  StereotypeFontStyle plain
+}
