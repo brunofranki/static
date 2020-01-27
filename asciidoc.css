@@ -1,0 +1,50 @@
+.tocify-subheader {
+    font-style: normal;
+    font-size: 90%;
+}
+
+.tocify ul {
+    margin: 0;
+ }
+
+.tocify-focus, .tocify-hover.tocify-focus {
+    color: rgb(37, 136, 194); 
+    background-color: #a7d6ff;
+}
+
+.tocify-focus > a {
+    color: #1d4b8f; 
+    font-weight: bold;
+}
+
+.tocify-hover {
+    background-color: #a7d6ff;
+}
+
+.tocify-header {
+    padding-bottom: 2px
+}
+
+.tocify-item {
+    padding: 3px;
+}
+
+body {
+    font-family:'Lato', sans-serif
+}
+
+a {
+    color: #666;
+}
+
+.tableblock tr:nth-child(even) {
+    background-color: #FAFAFA
+}
+
+table thead, table tfoot {
+    background: #ccd5e2;
+}
+
+.test {
+    background-color: black;
+}
