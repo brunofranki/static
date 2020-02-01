@@ -48,3 +48,44 @@ table thead, table tfoot {
 .test {
     background-color: black;
 }
+
+    h2 {
+      background: #5597bd;
+      padding-left: 10px;
+      font-weight: 400;
+      
+    }
+    h2>a.link {
+      color: #FFF;
+    }
+
+    h3 {
+      background: #ecf3fb;
+      padding-left: 10px;
+      font-weight: 400;
+    }
+
+    h3>a.link {
+      color: #333;
+    }
+
+    h4 {
+      padding-left: 10px;
+      font-weight: 400;
+    }
+
+    h4>a.link {
+      color: #47a29e;
+      
+    }
+
+    h5 {
+      padding-left: 10px;
+      font-weight: 400;
+      font-style: italic;
+    }
+
+    h5>a.link {
+      color: #47a29e;
+      
+    }
