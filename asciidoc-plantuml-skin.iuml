@@ -39,6 +39,13 @@ skinparam footer {
   FontStyle plain
 }
 
+'Class
+skinparam class {
+	BackgroundColor #FCFDFF
+	ArrowColor #6C8EBF
+	BorderColor #9AB3D6
+}
+
 'Title (inherits from Default)
 skinparam title {
   'Font Style (inherits from Default)
